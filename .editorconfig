@@ -1,0 +1,15 @@
+root = true
+
+[*]
+charset = utf-8
+# Указывает, что строки должны заканчиваться символом LF (Line Feed), а не CRLF (используется в Windows)
+end_of_line = lf
+# Гарантирует, что в конце файла всегда будет новая пустая строка
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+# Удаляет лишние пробелы в конце строк при сохранении файла
+trim_trailing_whitespace = true
+
+[*.md]
+trim_trailing_whitespace = false

@@ -1,0 +1,23 @@
+# Исключаем папки с собранными и зависимыми файлами
+node_modules/
+dist/
+
+# Файлы конфигурации, которые генерируются автоматически или не нужны в репозитории
+package-lock.json
+tsconfig.tsbuildinfo
+
+
+# Логи и отладочные файлы
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE и редакторы кода
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

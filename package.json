@@ -1,0 +1,34 @@
+{
+  "name": "echo",
+  "version": "1.0.0",
+  "description": "Echo.js will be a library for creating “echoes” of events on a web page that react to user actions and create visual, audio or even tactile effects, simulating mode reactions.",
+  "homepage": "https://github.com/Lokrip/echo#readme",
+  "bugs": {
+    "url": "https://github.com/Lokrip/echo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lokrip/echo.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "eslint": "^9.19.0",
+    "globals": "^15.14.0",
+    "ts-loader": "^9.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.22.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "echo": "file:"
+  }
+}

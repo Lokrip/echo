@@ -13,6 +13,10 @@ interface EchoDefaultOptions {
     */
     delay: number;
     /**
+    * Включение вибрации на мобильных
+    */
+    vibration: boolean;
+    /**
     * Длительность  эффекта в мс
     */
     duration: number;

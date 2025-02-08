@@ -1,16 +1,25 @@
 import webpack from "webpack";
 import path from 'path';
 
-const webpackConfig = (env: any) => {
+type TypeBuild = "development" | "production"
+
+interface EnvVariables {
+    mode: TypeBuild
+}
+
+
+const webpackConfig = (env: EnvVariables) => {
+    const isDevevelopment = env.mode === "development"
+    const isProduction = env.mode === "production"
+
     const config: webpack.Configuration = {
         mode: env.mode ?? "development",
-        entry: path.resolve(__dirname, "lib", "index.ts"),
+        entry: path.resolve(__dirname, "index.ts"),
         output: {
             path: path.resolve(__dirname, "dist"),
             filename: "[name].[contenthash].js",
             clean: true
         },
-
         module: {
             rules: [
               {
@@ -23,7 +32,7 @@ const webpackConfig = (env: any) => {
         resolve: {
           extensions: ['.tsx', '.ts', '.js'],
         },
-        
+
     }
 
     return config;
